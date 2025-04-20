@@ -6,13 +6,13 @@ import cosas.*
 test "encontrar(elemento) según Floki" {
     assert.that(floki.arma().estaCargada())
     floki.encontrar(castillo)
-    assert.equals(100, castillo.nivelDeDefensa())
+    assert.equals(1, floki.arma().numeroDeUsos())
 }
 
 test "castillo recibe ataque 
 y pierde tanta defensa como intensidad del ataque" {
     assert.that(floki.arma().estaCargada())
     floki.encontrar(castillo)
-    assert.equals(1, floki.arma().numeroDeUsos())
+    assert.equals(100, castillo.nivelDeDefensa())
 }
 
