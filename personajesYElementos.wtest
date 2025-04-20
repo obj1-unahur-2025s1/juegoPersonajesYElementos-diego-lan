@@ -1,0 +1,18 @@
+import personajes.*
+import cosas.*
+
+
+
+test "encontrar(elemento) según Floki" {
+    assert.that(floki.arma().estaCargada())
+    floki.encontrar(castillo)
+    assert.equals(100, castillo.nivelDeDefensa())
+}
+
+test "castillo recibe ataque 
+y pierde tanta defensa como intensidad del ataque" {
+    assert.that(floki.arma().estaCargada())
+    floki.encontrar(castillo)
+    assert.equals(1, floki.arma().numeroDeUsos())
+}
+
